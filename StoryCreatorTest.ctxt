@@ -10,4 +10,6 @@ comment2.target=void\ tearDown()
 comment2.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
 comment3.params=
 comment3.target=void\ createAdjectiveStory()
-numComments=4
+comment4.params=
+comment4.target=void\ createAdjectiveStoryFromDictionary()
+numComments=5

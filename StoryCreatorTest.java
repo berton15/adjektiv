@@ -26,6 +26,7 @@ public class StoryCreatorTest
     @Before
     public void setUp()
     {
+        StoryCreator storycreator = new StoryCreator();
     }
 
     /**
@@ -41,8 +42,18 @@ public class StoryCreatorTest
     @Test
     public void createAdjectiveStory()
     {
-        StoryCreator storyCre2 = new StoryCreator();
-        storyCre2.createAdjectiveStory("adjektivhistorie.txt", "adjektiv.txt", "ferdig.txt");
+        storycreator.createAdjectiveStory("adjektivhistorie.txt", "adjektiv.txt", "adjektivhistorie-ferdig.txt");
+        storycreator.createAdjectiveStory("aftenpostenhistorie.txt", "adjektiv.txt", "aftenpostenhistorie-ferdig.txt");
+        storycreator.createAdjectiveStory("ringvollhistorie.txt", "adjektiv.txt", "ringvollhistorie-ferdig.txt");
+    }
+
+    @Test
+    public void createAdjectiveStoryFromDictionary()
+    {
+        storycreator.createAdjectiveStoryFromDictionary("adjektivhistorie.txt", "NSF-ordlisten.txt", "adjektivhistorie-ferdig.txt");
+        storycreator.createAdjectiveStoryFromDictionary("aftenpostenhistorie.txt", "NSF-ordlisten.txt", "aftenpostenhistorie-ferdig.txt");
+        storycreator.createAdjectiveStoryFromDictionary("ringvollhistorie.txt", "NSF-ordlisten.txt", "ringvollhistorie-ferdig.txt");
     }
 }
+
 
